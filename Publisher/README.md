@@ -8,10 +8,10 @@ zookeeper-server-start.bat D:\DEV-SOFTWARES\kafka_2.12-1.1.0\config\zookeeper.pr
 kafka-server-start.bat D:\DEV-SOFTWARES\kafka_2.12-1.1.0\config\server.properties
 
 # Create Topic:
-kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 -topic javatechie
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 -topic javaKafka
 
 # Produce a message 
-kafka-console-producer.bat --broker-list localhost:9092 --topic javatechie
+kafka-console-producer.bat --broker-list localhost:9092 --topic javaKafka
 
 # Consume a message
-kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic javatechie
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic javaKafka
